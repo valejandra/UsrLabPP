@@ -1,0 +1,210 @@
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link href="general.css" type="text/css" rel="stylesheet" />
+	<link href="inicio.css" type="text/css" rel="stylesheet" />
+	<title>Inicio</title>
+</head>
+
+<style>
+
+.borders{
+    border:solid 2px black;
+    background-color:grey;  
+}  
+
+body {
+	font-family: sans-serif;
+	background-color: rgb(239, 244, 246);
+}
+
+.navbar {
+	margin-bottom: 0 !important;
+}
+
+.mar-left {
+	margin-left: -13px !important;
+}
+
+ul.navbar-right {
+
+	margin-right: -14.5vw !important;
+}
+
+.navbar-nav>li>a {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.row {
+	margin-left: -15px !important;
+}
+
+.margin-left-nav {
+	margin-left: 0 !important;
+}
+
+ul.dropdown-width {
+	width: 300px;
+}
+
+.navbar .nav>li.dropdown.open.active>a:hover,
+.navbar .nav>li.dropdown.open>a,
+li a:hover,
+li.active>a {
+	color: #fff !important;
+	background-color: rgb(10, 66, 117) !important;
+}
+
+li a:hover {
+	background-color: rgb(10, 66, 117) !important;
+	color: #ffffff !important;
+}
+
+li.active>a {
+	background-color: rgb(10, 66, 117) !important;
+	color: #ffffff !important;
+}
+
+.navbar-brand:hover {
+	color: #5b9bd1 !important;
+}
+
+ul.horizontal li {
+	border-left: 1px solid black;
+}
+
+ul.horizontal li:last-child {
+	border-right: 1px solid black;
+}
+
+
+.border {
+	border: 1px solid black;
+}
+
+
+.profile-sidebar {
+	background-color: rgb(35, 35, 35);
+	height: 92.5vh;
+	border-right: 1px solid black;
+	margin-top: 0 !important;
+}
+
+.profile-userpic {
+	padding-top: 40px;
+}
+
+.profile-userpic img {
+	margin: 0 auto;
+	width: 70%;
+	height: 70%;
+}
+
+.profile-user {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.profile-name {
+	color: #93a3b5;
+	font-size: 16px;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+
+.profile-menu {
+	margin-top: 30px;
+}
+
+.profile-menu ul li a {
+	color: #93a3b5;
+	font-size: 14px;
+	font-weight: 400;
+	padding-left: 40px;
+	border-bottom: 1px solid black;
+}
+
+ul.vertical li:first-child {
+	border-top: 1px solid black;
+}
+
+.profile-menu ul li a i {
+	margin-right: 9px;
+	font-size: 14px;
+}
+
+#full-page {
+	background-color: rgb(239, 244, 246);
+	width: 100vw;
+}
+
+#header-content {
+	height: 43.5vh;
+}
+
+.lma-content {
+	height: 50vh;
+}
+</style>
+
+<body>
+
+	<div class="container-full">
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container margin-left-nav">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="navbar-header">
+							<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+							<a class="navbar-brand" href="/">DataMed</a>
+						</div>
+					</div>
+
+					<div class="col-md-10">
+						<div class="navbar-collapse collapse" id="navbar-main">
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</nav>
+	</div>
+
+
+	<section class="container-full">
+
+		<div class="row" id="full-page">
+        	<div class="col-md-2">
+				<div class="profile-sidebar">
+                	<div class="profile-userpic">
+					</div>
+                        <div class="profile-user">
+						<div class="profile-name"></div>
+					</div>
+                    <nav class="profile-menu">
+						<ul class="nav navbar vertical">
+							<li>
+								<a href="/"><i class="glyphicon glyphicon-user"></i> Pacientes</a>
+							</li>
+							<li>
+								<a href="#"><i class="glyphicon glyphicon-stats"></i> Ventas</a>
+							</li>
+							<li>
+								<a href="#"><i class="glyphicon glyphicon-star"></i> Productos</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>

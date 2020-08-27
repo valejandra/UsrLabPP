@@ -1,0 +1,72 @@
+<%- include('partials/_header.ejs') %>
+	<div class="col-md-10">
+         <div class="container" style="margin-top:10px;">
+        <div class="row mt-4">
+            <div class="col-md-10">
+                <p></p>
+            </div>
+            <div class="col-md-2">
+                <a href="/show" style="margin-bottom:15px;" class="btn btn-info">Nuevo paciente</a>
+            </div>
+        </div>
+         <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" name="buscar" placeholder="Buscar" class="form-control" autofocus>
+            </div>
+         </div>
+        <div class="col-md-12">
+            <table class="table table-bordered table-hover">
+                <thead style="font-size:12px">
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Email</th>
+                        <th>Dirección</th>
+                        <th>Telefono Fijo</th>
+                        <th>Telefono Movil</th>
+                        <th>DPI/CUI</th>
+                        <th>Editar/Eliminar</th>
+                </thead>
+                <tbody style="font-size:12px">
+                    <% if (data) {%>
+                        <% for (var i = 0; i < data.length; i++){%>
+                            <tr>
+                                 <td>
+                                    <%= data[i].id %>
+                                </td>
+                                 <td>
+                                    <%= data[i].name %>
+                                </td>
+                                 <td>
+                                    <%= data[i].scname %>
+                                </td>
+                                 <td>
+                                    <%= data[i].email %>
+                                </td>
+                                 <td>
+                                    <%= data[i].address %>
+                                </td>
+                                 <td>
+                                    <%= data[i].phone %>
+                                </td>
+                                 <td>
+                                    <%= data[i].mobile %>
+                                </td>
+                                 <td>
+                                    <%= data[i].dpi %>
+                                </td>
+                                <td>
+                                	<a href="/update/<%= data[i].id%>" class="edit"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+							        <a href="/delete/<%= data[i].id %>" class="delete" ><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                </td>
+                            </tr>
+                        <% } %>
+                    <%} %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<%- include('partials/_footer.ejs') %>
+	
